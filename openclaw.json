@@ -1,0 +1,15 @@
+{
+"gateway": {
+"port": 18789,
+"bind": "0.0.0.0"
+},
+"agents": {
+"default": "main"
+},
+"channels": {
+"telegram": {
+"enabled": true,
+"token": "${TELEGRAM_BOT_TOKEN}"
+}
+}
+}
