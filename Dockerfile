@@ -14,5 +14,5 @@ RUN npm i -g openclaw@latest --ignore-scripts --omit=optional
 
 EXPOSE 18789
 
-CMD ["openclaw", "gateway", "--port", "18789"]
+CMD ["sh", "-c", "openclaw gateway --port ${PORT:-18789} --allow-unconfigured"]
 
