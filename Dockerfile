@@ -10,7 +10,7 @@ python3 \
 git \
 && rm -rf /var/lib/apt/lists/*
 
-RUN npm i -g openclaw@latest
+RUN npm i -g openclaw@latest --ignore-scripts --omit=optional
 
 EXPOSE 18789
 
