@@ -1,0 +1,10 @@
+services:
+- type: web
+name: openclaw-gateway
+env: docker
+plan: free
+autoDeploy: true
+healthCheckPath: /
+envVars:
+- key: OPENCLAW_GATEWAY_PORT
+value: "18789"
